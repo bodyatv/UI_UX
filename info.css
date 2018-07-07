@@ -1,4 +1,4 @@
-@media all  and (max-width:769px){
+@media only screen  and (max-width:769px){
  .info{
     width: 100%;
     background-color: #ff3b3f;
