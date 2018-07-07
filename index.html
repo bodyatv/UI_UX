@@ -3,29 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>Schedule</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="info.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<div class="schedule"></div>
-<div class="info">
-<div class="profile_photo">
-<h1>Profile</h1>    
-    <hr>
-    <img src="Dr-Zukerman-Profile.jpg" alt="doctor">
-    </div>
-    <h3><i class="far fa-user-circle"></i>Dr Robert Zuckerman</h3>       
-    <h3><i class="fas fa-mobile-alt"></i>+1-541-754-3010</h3>
-    <h3><i class="fas fa-user-md"></i>Surgeon</h3>
-    <button type="button">
-        <span>Log out</span>
-        <i class="fas fa-times"></i>
-    </button>
-</div>
+    <div class="info">
 
-    
-    
+        <h1>Profile</h1>
+        <button type="button">
+            <span>Log out</span>
+            <i class="fas fa-times"></i>
+            </button>
+        <hr>
+        
+        <div class="main_info">
+            <div class="photo"><div class="helper"><img src="Dr-Zukerman-Profile.jpg" alt="doctor"></div></div>
+
+            <div class="data">
+                <h3><i class="far fa-user-circle"></i>Dr. Robert Zuckerman</h3>       
+                <h3><i class="fas fa-mobile-alt"></i>+1-541-754-3010</h3>
+                <h3><i class="fas fa-user-md"></i>Surgeon</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="schedule">
+            <div class="day">Monday<i class="far fa-hand-point-up"></i><span>Pick up time</span></div>
+            <div class="day">Tuesday<i class="far fa-hand-point-up"></i><span>Pick up time</span></div>
+            <div class="day">Wednesday<i class="far fa-hand-point-up"></i><span>Pick up time</span></div>
+            <div class="day">Thursday<i class="far fa-hand-point-up"></i><span>Pick up time</span></div>
+            <div class="day">Friday<i class="far fa-hand-point-up"></i><span>Pick up time</span></div>
+            <div class="day">Saturday<i class="far fa-hand-point-up"></i><span>Pick up time</span></div>
+            <div class="day">Sunday<i class="far fa-hand-point-up"></i><span>Pick up time</span></div>
+        </div>
+
+        <div class="wrap_time">
+       <div class="time">
+            <button class="switch">Press to change day/night</button>
+            <div class="daytime">
+            <h3>Morning</h3>
+            <div class="time_before_noon"><span>7:00</span><span>8:00</span></div>
+            <div class="time_before_noon"><span>9:00</span><span>10:00</span></div>
+            <div class="time_before_noon"><span>10:00</span><span>11:00</span></div>
+            <div class="time_before_noon"><span>11:00</span><span>12:00</span></div>
+            <h3>After noon</h3>
+            <div class="time_after_noon"><span>1:00</span><span>2:00</span></div>
+            <div class="time_after_noon"><span>2:00</span><span>3:00</span></div>
+            <div class="time_after_noon"><span>3:00</span><span>4:00</span></div>
+            <div class="time_after_noon"><span>5:00</span><span>6:00</span></div>
+            <div class="time_after_noon"><span>7:00</span><span>8:00</span></div>
+            <div class="time_after_noon"><span>8:00</span><span>9:00</span></div>
+            <div class="time_after_noon"><span>10:00</span><span>11:00</span></div>
+            <div class="time_after_noon"><span>11:00</span><span>12:00</span></div>
+            <button class="go_back"><i class="fas fa-arrow-left"></i>Go back</button>
+            <button class="submit"><i class="fas fa-check"></i>Submit</button>
+           </div>
+           
+
+            <div class="night">
+            <h3>After midnight</h3>
+            <div class="time_after_midnight"><span>12:00</span><span>1:00</span></div>
+            <div class="time_after_midnight"><span>1:00</span><span>2:00</span></div>
+            <div class="time_after_midnight"><span>2:00</span><span>3:00</span></div>
+            <div class="time_after_midnight"><span>4:00</span><span>5:00</span></div>
+            <div class="time_after_midnight"><span>6:00</span><span>7:00</span></div>
+            <button class="go_back"><i class="fas fa-arrow-left"></i>Go back</button>
+            <button class="submit"><i class="fas fa-check"></i>Submit</button>
+            
+        </div>
+        </div>
+        </div>
 </body>
 </html>
