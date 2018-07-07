@@ -1,0 +1,122 @@
+@media all  and (max-width:769px){
+ .info{
+    width: 100%;
+    background-color: #ff3b3f;
+    color:black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;    
+    text-align: center;
+    color: #efefef;
+}
+
+.info h1{
+    position: absolute;
+    visibility: hidden;
+}
+.info i{
+    position: relative;
+    right: 3%;
+}
+.info img{
+    width:50%;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+
+.info hr{
+    position: absolute;
+    visibility: hidden;
+}
+
+.info button{
+    font-size: 13.5px;
+    align-self: flex-end;
+    margin-bottom: 5px;
+    background-color:#efefef;
+    border: 0px;
+    height: 30px;
+    width: 6.3%;
+    border-radius: 4%;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 3px 3px 5px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.info button i{
+    align-self: center;
+}
+.info button span{
+    display: block;
+}
+
+.info button:hover{
+    background-color: black;
+    color: #efefef;
+}}
+
+
+@media all  and (min-width:769px){
+    .info{
+        height: 695px;
+        width: 20%;
+        background-color: #ff3b3f;
+        color:black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        color: #efefef;
+    }
+    
+    .info h1{
+        margin-bottom: 5px;
+    }
+    .info i{
+        position: relative;
+        right: 4%;
+    }
+    .info img{
+        width:80%;
+        margin: 5px;
+        border-radius: 50%;
+    }
+    
+    .info hr{
+        background-color: #efefef;
+        width: 80%;
+        height: 1px;
+    }
+    
+    .info button{
+        font-size: 13.5px;
+        position: absolute;
+        bottom: 2%;
+        right: 1%;
+        background-color:#efefef;
+        border: 0px;
+        height: 30px;
+        width: 6.3%;
+        border-radius: 4%;
+        transition: all 0.4s ease-in-out;
+        box-shadow: 3px 3px 5px black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .info button i{
+        align-self: center;
+    }
+    .info button span{
+        display: block;
+    }
+    
+    .info button:hover{
+        background-color: black;
+        color: #efefef;
+    }}

@@ -1,0 +1,23 @@
+@media all  and (min-width:769px){
+body{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    margin: 0;
+}
+.schedule{
+ width: 80%;
+    background-color: #efefef;
+}}
+
+@media all  and (max-width:769px){
+    body{
+        font-family: 'Ubuntu', sans-serif;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .schedule{
+     width: 80%;
+    background-color: #efefef;
+    }
+}
