@@ -1,4 +1,4 @@
-@media all and (max-width: 550px){
+@media all and (max-width: 660px){
     /* html,body{
         height: 100%;
     } */
@@ -7,6 +7,22 @@
         background-color: #f1f1f1;
         display: flex;
         flex-direction: column;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+
+}
+
+@media all and (min-width: 660px){
+    html,body{
+        height: 100%;
+    }
+    body{
+        overflow: hidden;
+        margin: 0;
+        background-color: #f1f1f1;
+        display: flex;
+        flex-direction: row-reverse;
         font-family: 'Ubuntu', sans-serif;
     }
 

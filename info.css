@@ -1,4 +1,4 @@
-@media all and (max-width: 550px){
+@media all and (max-width: 660px){
 
     .info{
         background-color:#ff3b3f;
@@ -51,6 +51,7 @@
         justify-content: space-between;
         background: linear-gradient(to right,#efefef 50%,  black 50%);
         background-size: 200% 100%;
+        cursor: pointer;
     }
     .info span{
         margin-right: 4px;
@@ -110,7 +111,7 @@
     }
 
     .time{
-        border: 2px solid #ff3b3f;
+        border: 4px solid #ff3b3f;
         border-radius: 10%;
         background-color: #e6e6e6;
         display: flex;
@@ -139,8 +140,16 @@
         margin: 7px;
         transition: all 0.45s ease-in-out;
         cursor: pointer;
+        transition: all 0.3s ease-in-out;
     }
-
+    /* .time_before_noon  hr{
+        display: block;
+        width: 10%;
+        background-color: black;
+        height: 2px;
+        border: 0;
+    } */
+    
     .time_after_noon span{
         margin :0 10px;
         display: block;
@@ -172,25 +181,241 @@
     .go_back i{
         margin-right: 3px;
     }
-    .submit{
-        cursor: pointer;
-        background-color: #7FFF00;
-        height: 27px;
-        border: 0px;
-    }
-    .submit i{
-        margin-right: 3px;
-    }
+    
 
     .checked{
-        background-color: #7FFF00 !important;
-        border: none;
+        background-color: rgb(126, 252, 0) !important;
+        border: 3px solid #7FFF00;
+        opacity: 0.8;
+    }
+
+    .nightactive{
+        background-color: #0C090A;
+    }
+
+    .help{
+        margin: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+
+@media all and (min-width: 660px){
+
+    .info{
+        padding-top: 40px;
+        background-color:#ff3b3f;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        color: #f1f1f1;
+        height: auto;
+    }
+    .info h1{
+        background-color: #f1f1f1;
+        color: #ff3b3f;
+        border-radius: 3%;
+        padding: 5px;
+    }
+    .main_info{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .photo{
+        width: 65%;
+        display: flex;
+        align-items: center;
+    }
+    .photo img{
+        width: 100%;
+        border-radius: 50%;
+        border:2px solid black;
+    }
+    .data h3{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .data i{
+        margin: 6px;
+    }
+
+    .info hr{
+        display: none;
+    }
+    .info button{
+        font-size: 13.5px;
+        border: 0px;
+        border-radius: 4%;
+        transition: all 0.67s ease-in-out;
+        box-shadow: 3px 3px 5px black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: linear-gradient(to right,#efefef 50%,  black 50%);
+        background-size: 200% 100%;
+        cursor: pointer;
+    }
+    .info span{
+        margin-right: 4px;
+    }
+    .info button i{
+        margin-top: 1.8%;
+    }
+    .info button:hover{
+        color:#f1f1f1;
+        background-position:right bottom;
+        box-shadow:none;
+    }
+
+    .schedule{
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 70%;
+        margin-top: 10px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 60px;
+    }
+    .day{
+        cursor: pointer;
+        position: relative;
+        color: #f1f1f1;
+        background-color: #ff3b3f;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        transition: all 0.8s ease-in-out;   
+        box-shadow: 3px 3px 5px black;
+        margin-bottom: 10px;
+    }
+    .day i{
+        margin: 5px;
+    }
+    .day:hover{
+        box-shadow: 0px 0px 0px black;
+        background-color: #f1f1f1;
+        border: 3px solid #ff3b3f;
+        color: #ff3b3f;
+        border-radius: 3%;
     }
 
 
 
+    /* Time */
+    
+    
+    
+    .wrap_time{
+        display: none;
+        position: absolute;
+        width: 45%;
+        left: 10%;
+        top: 150%;
+    }
 
+    .time{
+        border: 4px solid #ff3b3f;
+        border-radius: 10%;
+        background-color: #e6e6e6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+    .switch{
+        width: 40%;
+        background-color: #ff3b3f;
+        border: 0px;
+        color: #efefef;
+        cursor: pointer;
+    }
+
+    .daytime,.night{
+        width: 65%;
+    }
+    
+    .time_after_noon,.time_before_noon,.time_after_midnight{
+        border: 2px solid #ff3b3f;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 7px;
+        transition: all 0.45s ease-in-out;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    /* .time_before_noon  hr{
+        display: block;
+        width: 10%;
+        background-color: black;
+        height: 2px;
+        border: 0;
+    } */
+    
+    .time_after_noon span{
+        margin :0 10px;
+        display: block;
+        }
+
+    .time_before_noon span{
+        display: block;
+        margin: 0px 10px;
+    }
+    .time_after_midnight span{
+        display: block;
+        margin: 0px 10px;
+    }
+
+    .time_after_noon:hover,.time_before_noon:hover,.time_after_midnight:hover{
+        background-color: #ff3b3f;
+        color: #f1f1f1;
+    }
+
+    .go_back{
+        border: 0px;
+        background-color: #ff3b3f;
+        color: #efefef;
+        text-align: center; 
+        cursor: pointer;       
+        height: 27px;
+    }
+
+    .go_back i{
+        margin-right: 3px;
+    }
+    
+
+    .checked{
+        background-color: rgb(126, 252, 0) !important;
+        border: 3px solid #7FFF00;
+        opacity: 0.8;
+    }
+
+    .nightactive{
+        background-color: #0C090A;
+    }
+
+    .help{
+        margin: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
+
+
 
 
 
